@@ -1,0 +1,202 @@
+1.	 What are the advantages of using Git?
+
+Ans:     1:Distributed development: Git is designed for distributed development, which means that each developer has a complete copy of the  
+         repository on their local machine. This allows developers to work on the same project without having to be connected to a central    
+         server.
+
+	 2:Branching and merging: Git makes it easy to create and merge branches, which are isolated copies of the repository. This allows 
+	 developers to work on new features or bug fixes without affecting the main branch of the project.
+
+ 	 3:Performance: Git is very fast and efficient, even for large projects.
+
+ 	 4:Security: Git uses cryptographic hashing to protect the integrity of the repository.
+
+	 5:Free and open source: Git is free to use and open source, which means that there is a large community of users and contributors      
+	 who are constantly improving it.
+
+         6:Collaboration: Git is well-suited for collaboration, as it makes it easy for multiple developers to work on the same project                      
+         without conflicting with each other.
+
+         7:Non-linear history: Git maintains a complete history of all changes to the repository, which can be easily browsed and navigated.    
+         This makes it easy to track down bugs and revert to previous versions of the code.
+
+         8:Scalability: Git can be used to manage projects of all sizes, from small personal projects to large enterprise projects.
+
+2.	 Name a few Git commands with their function.
+
+Ans:     1:git init: Initializes a new Git repository.
+
+	 2:git clone: Clones an existing Git repository to your local machine.
+
+ 	 3:git add: Adds files to the staging area.
+
+	 4:git commit: Commits the changes in the staging area to the repository.
+
+	 5:git push: Pushes the local changes to the remote repository.
+
+	 6:git pull: Pulls the remote changes to the local repository.
+
+	 7:git status: Shows the status of the working tree and the staging area.
+
+ 	 8:git log: Shows the history of the repository.
+
+	 9:git checkout: Switches to a different branch or commit.
+
+	 10:git branch: Creates a new branch or lists the existing branches.
+
+	 11:git merge: Merges two branches together.
+
+	 12:git diff: Shows the difference between two commits or branches.
+
+3.	 What is a Git repository?
+
+Ans:     A Git repository is a collection of files and their complete revision history. It is a central storage location for managing and tracking changes in files and directories. 	
+	 Git repositories are widely used in software development, where they facilitate efficient and controlled code management.
+
+	 Git repositories are typically stored on a remote server, such as GitHub or GitLab. However, each developer also has a local copy of the repository on their own machine. 	 	 This allows developers to work on the same project without having to be connected to the remote server.
+
+	 When a developer makes changes to a file in their local repository, they can stage those changes and then commit them to the repository. A commit is a snapshot of the 	   	 repository at a specific point in time. Commits are typically accompanied by a commit 	message, which describes the changes that were made.
+
+	 Once a commit is made to the local repository, it can be pushed to the remote repository. This allows other developers to pull the changes to their local repositories. Git makes 	 it easy to merge changes from different branches and to revert to previous versions of the code.
+4.	 What’s the difference between Git and GitHub?
+
+Ans:     Features                           Git                                                     Github
+	 
+	 Type                               Distributed version control system                      Web-based hosting service for Git repositories
+             
+         Purpose                            Tracking changes in code over time                      Collaborating on software projects
+         
+     	 Features                           Branching, merging, versioning                          Issue tracking, pull requests, project management tools
+         
+         Cost                               Free and open source                                    Free for public repositories, paid plans for private repositories
+
+	 A software developer can use Git to create a local repository for their code. They can then stage changes, commit them to the repository, and push them to a remote GitHub 	 	 repository.
+
+	 Another developer can clone the GitHub repository to their local machine and start working on the code. They can create a new branch for their changes, make their changes, and 	 commit them to the branch.
+
+	 Once the developer is finished with their changes, they can push the branch to the remote GitHub repository. They can then create a pull request to merge their changes into the 	 main branch of the project.
+
+	 The maintainer of the project can review the pull request and approve it. Once the pull request is approved, the changes will be merged into the main branch of the project.
+
+5.	 What does the git push command do?
+
+Ans:     The git push command uploads local repository content to a remote repository. It is used to publish your changes to a central repository so that other developers can pull them 	 down.
+
+	 To use git push, you need to have a remote repository configured. You can do this with the git remote add command. Once you have a remote repository configured, you can push your 	 changes to it with the git push command.
+ 	 
+	 Command:git push [remote] [branch]
+          
+         The remote argument is the name of the remote repository that you want to push your changes to. The branch argument is the name of the branch that you want to push your changes 	 to.
+
+	 If you do not specify a branch, git push will push the current branch to the remote repository.
+	 
+	 If you have any uncommitted changes in your working tree, git push will refuse to push them. You need to commit your changes before you can push them to a remote repository.
+
+	 If you are trying to push changes to a branch that does not exist on the remote repository, git push will create the branch for you.
+
+	 git push is a powerful command that can be used to publish your changes to a remote repository. It is an essential part of collaborating on software projects with other 	 	 developers.
+
+6.	 Difference between git fetch and git pull.
+
+Ans:	 The main difference between git fetch and git pull is that git fetch downloads the latest changes from a remote repository to your local repository, but does not merge them into 	 your current branch, while git pull downloads the latest changes from a remote repository and merges them into your current branch.
+
+	 In other words, git fetch is a safer command, because it does not modify your working tree. Git pull, on the other hand, can modify your working tree, so it is important to make 	 sure that you are ready for that before you run the command.
+               
+ 	 Feature                                         git fetch                   git pull
+	 
+	 Downloads changes from remote repository        Yes                         Yes
+
+	 Merges changes into current branch	         No	                     Yes
+	 
+	 Modifies working tree	 			 No			     Yes
+	 
+	 Safer command	                 		 No			     Yes
+
+
+7.	 What does git clone do?
+
+Ans:	 The git clone command creates a copy of a remote Git repository on your local machine. This allows you to work on the repository without having to be connected to the remote 	 	 server.
+
+	 To use git clone, you need to have the URL of the remote repository that you want to clone. You can find the URL of a remote repository on the GitHub or GitLab page for the 	 	 repository.
+	
+	 Command:git clone [remote-repository-url]
+	 
+	 git clone https://github.com/user/my-project.git
+
+	 This will create a new directory named my-project in your current working directory. The new directory will contain a copy of the remote repository.
+
+	 Once you have cloned the repository, you can start working on it. You can make changes to the files in the repository, commit your changes, and push them to the remote repository.
+
+	 git clone is a powerful command that allows you to download and work on Git repositories on your local machine. It is an essential part of using Git.
+	 
+8.	 What do you understand about the Staging area in Git?
+
+Ans:	 To stage all of the changes in your working directory, you can use the following command:
+
+      	 Command:git add .
+
+	 To stage a specific file, you can use the following command:
+
+	 Command:git add filename.txt
+
+	 To unstage a file, you can use the following command:
+
+	 Command:git reset filename.txt
+
+	 To view the contents of the staging area, you can use the following command:
+	 Command:git status
+
+	 Once you have staged your changes, you can commit them to your repository with the git commit command.
+	 
+	 The staging area is an essential tool for using Git effectively. By understanding how to use the staging area, you can create clean and concise commits and manage your changes 	 more efficiently.
+
+9.	 What is the use of the git config command?
+Ans:	 Here are some of the most common uses of the git config command:
+
+	 To set your user name and email address.
+
+	 To set your default editor.
+
+	 To set your preferred diff tool.
+
+	 To set the color scheme for Git output.
+
+	 To set the line length for Git output.
+
+	 To set the merge strategy that Git should use.
+
+	 To set the rebase strategy that Git should use.
+
+ 	 To set the commit message format that Git should use.
+
+10.	 What is the difference between fork, branch, and clone?
+
+Ans:	 Fork and branch are two different ways to create a copy of a Git repository. Clone is a way to create a copy of a remote Git repository on your local machine.
+
+	 Fork creates a copy of a remote Git repository on your own GitHub account. This allows you to make changes to the repository without affecting the original repository. Forks are 	 often used to contribute to open source projects.
+
+	 Branch creates a copy of a repository on your local machine. This allows you to work on a new feature or bug fix without affecting the main branch of the repository. Branches are 	 often used to collaborate on projects with other developers.
+
+	 Clone creates a copy of a remote Git repository on your local machine. This is the same as creating a branch, but instead of creating a copy of the current branch, you are  	 	 creating a copy of the entire repository. Clones are often used to create a local copy of a repository so that you can work on it offline or to create a local copy of a repository 	 so that you can contribute to it.
+	 
+	 Feature	                         			Fork			Branch	 		Clone
+
+	 Creates a copy of a repository					Yes			Yes			Yes
+		
+	 Creates a copy on your own GitHub account			Yes			No			No
+	
+	 Creates a copy on your local machine				Yes			Yes			Yes
+
+	 Often used to contribute to open source projects		Yes			No			No
+
+	 Often used to collaborate on projects with other developers	Yes			Yes			No
+
+	 Often used to create a local copy of a repository		No			Yes			Yes
+
+	 Here are some examples of when you might want to use fork, branch, and clone:
+
+	 Fork: If you want to contribute to an open source project, you would first fork the repository. This will create a copy of the repository on your own GitHub account. You can then 	 make changes to the repository and push your changes to your fork. Once you are happy with your changes, you can create a pull request to merge your changes into the main branch 	 of the repository.
+
+ 	 Branch: If you are working on a new feature or bug fix, you would typically create a new branch. This will allow you to work on your changes without affecting the main branch of 	 the repository. Once you are finished with your changes, you can merge your branch into the main branch of the repository.
+
+	 Clone: If you want to create a local copy of a repository so that you can work on it offline, you would use the git clone command. This will create a copy of the repository on 	 your local machine. You can then make changes to the repository and push your changes to the remote repository when you are finished.
