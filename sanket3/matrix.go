@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import ("fmt")
 
 func main() {
 	// Create a slice of slices to represent the matrix.
